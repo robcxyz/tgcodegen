@@ -1,0 +1,18 @@
+language: python
+python:
+- 3.6
+- 3.5
+- 3.4
+- 2.7
+install: pip install -U tox-travis
+script: tox
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: robcxyz
+  password:
+    secure: qqAU9a+kxfI8Yg+zGXSaNThH9p55vwSGUfrYuDuHcaGRoFgQ/rDdDLBajzC0dhL6338GrzxDToe6G7sajbEA/387D63dBRmVVZlGSQNhaqdtB2cIiKigxz2P6zvb/pDECYmQ4lXlBPIYQSWmdK3pGD9ONhZg2jm2Ek/hA8JY8486lYx2ub2210Lw3SpovsNd5lTmSSXNARD96wK8eXZCEcPoSPeA26IenfZ04mlFfWzLipT+fn+9WvIBYxqiyORle1Y0a20ddPm4FhyL2eIHDu8ujpTqZA5qWcMA0ZWd5ktC/upvNkgr2TtxTHu4QO1yAKLKopXocuKq++gK0csrIkGptyMmbCJTxWy1zLbIDdbxZREx9dJuihRyGmUXh4SPMOY+NwKJIOIxN9cW/CagcrhfeUJqfUMtq0Bd7DLRbQANzDwuCUZBsCOO2d4PB/FPSScfiOcZMbcQLN48P6erhsf2xUz9I0vRdzrstjOT2Qtup3PjVh2LRWuvOHDS1TsXsc0GGN5Twm0VZU1KjRNFCS0zqI9khpTPYXT+auzzJwDybjJKXta0eG/YFefIehNp/3ywh5VQRn/beFO81PsxP5gXNN7Tl22A+7e01G0SVkKHOM5oQsEQ0VcNNjFSAYHvhp/6hMmNQBKiNBAdZc+/fqKJ8QvEQFvWb9PVJjsxT5w=
+  on:
+    tags: true
+    repo: robcxyz/tgcodegen
+    python: 3.6
