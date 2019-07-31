@@ -33,6 +33,8 @@ SINGLE_STACK = {0: {'region': 'ap-northeast-1',
                         'logging': {'type': 'module', 'source': '', 'dependencies': '', 'vars': {}}}, 'files': {}}}
 
 FIXTURE_DIR = os.path.join(os.path.dirname(__file__), 'stacks')
+
+# Name, valid or not valid boolean
 STACK_FIXTURES = [
     (
         "common.hcl",
@@ -55,6 +57,8 @@ STACK_FIXTURES = [
         True,
     )
 ]
+
+# Name, valid or not valid boolean
 HEAD_FIXTURES = [
     (
         "head",
