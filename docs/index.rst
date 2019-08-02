@@ -8,10 +8,10 @@ Welcome to tgcodegen's documentation!
    readme
    installation
    usage
-   modules
    contributing
    authors
    history
+   stack-config
 
 Indices and tables
 ==================
